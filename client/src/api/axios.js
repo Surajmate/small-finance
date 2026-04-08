@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "/api",
+  baseURL: "https://small-finance-3ane.onrender.com/api",
 });
 
 instance.interceptors.request.use((config) => {
