@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LoanPro - Instant Loans</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="navbar">
+  <h2>LoanPro</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#calculator">Calculator</a>
+    <a href="#apply">Apply</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Instant Personal Loans</h1>
+    <p>Fast approval. Low interest. 100% digital.</p>
+    <button onclick="scrollToApply()">Apply Now</button>
+  </div>
+</section>
+
+<section id="calculator" class="calculator">
+  <h2>Loan Calculator</h2>
+  <input type="number" id="amount" placeholder="Loan Amount"/>
+  <input type="number" id="rate" placeholder="Interest Rate (%)"/>
+  <input type="number" id="time" placeholder="Time (Years)"/>
+  <button onclick="calculateLoan()">Calculate</button>
+  <p id="result"></p>
+</section>
+
+<section id="apply" class="apply">
+  <h2>Apply for Loan</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required/>
+    <input type="email" placeholder="Email" required/>
+    <input type="number" placeholder="Phone Number" required/>
+    <input type="number" placeholder="Loan Amount" required/>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 LoanPro. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
